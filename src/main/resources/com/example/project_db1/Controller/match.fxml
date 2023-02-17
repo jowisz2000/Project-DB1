@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_db1.Controller.MatchController">
+    <Button layoutX="276.0" layoutY="117.0" mnemonicParsing="false" onAction="#insertMecz" text="Upload" />
+    <Button layoutX="224.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchToApp" text="Return to main page" />
+    <TableView fx:id="matchTable" layoutX="13.0" layoutY="149.0" prefHeight="200.0" prefWidth="554.0">
+      <columns>
+          <TableColumn fx:id="idMatchColumn" prefWidth="61.60003662109375" text="Id" />
+          <TableColumn fx:id="hostsTeamColumn" prefWidth="112.800048828125" text="Hosts" />
+          <TableColumn fx:id="awayTeamColumn" prefWidth="110.39996337890625" text="Away" />
+          <TableColumn fx:id="scoreColumn" prefWidth="64.0" text="Score" />
+          <TableColumn fx:id="dateColumn" prefWidth="81.60003662109375" text="Date" />
+          <TableColumn fx:id="stadiumNameColumn" prefWidth="124.7999267578125" text="Stadium" />
+      </columns>
+    </TableView>
+    <TextField fx:id="txtStadiumName" layoutX="417.0" layoutY="84.0" promptText="Stadium" />
+    <TextField fx:id="txtDate" layoutX="236.0" layoutY="84.0" promptText="Date" />
+    <TextField fx:id="txtScore" layoutX="42.0" layoutY="84.0" promptText="Score" />
+    <TextField fx:id="txtIdMatch" layoutX="42.0" layoutY="45.0" promptText="Id of a match" />
+    <TextField fx:id="txtAwayTeam" layoutX="417.0" layoutY="45.0" promptText="Away" />
+    <TextField fx:id="txtHostsTeam" layoutX="236.0" layoutY="45.0" promptText="Hosts" />
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="271.0" layoutY="14.0" prefHeight="27.0" prefWidth="79.0" text="Matches">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>

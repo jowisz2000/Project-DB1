@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_db1.Controller.AppController">
+   <Button layoutX="440.0" layoutY="151.0" mnemonicParsing="false" onAction="#switchToSponsor" text="Sponsor" />
+   <Button layoutX="276.0" layoutY="151.0" mnemonicParsing="false" onAction="#switchToCoach" text="Coach" />
+   <Button layoutX="433.0" layoutY="99.0" mnemonicParsing="false" onAction="#switchToReferee" text="Referee" />
+   <Button layoutX="71.0" layoutY="99.0" mnemonicParsing="false" onAction="#switchToTeam" text="Team" />
+   <Label layoutX="115.0" layoutY="48.0" prefHeight="18.0" prefWidth="346.0" text="Choose table to which you would like to upload some data:" />
+   <Button layoutX="192.0" layoutY="151.0" mnemonicParsing="false" onAction="#switchToStadium" text="Stadium" />
+   <Button layoutX="360.0" layoutY="151.0" mnemonicParsing="false" onAction="#switchToPlayer" text="Player" />
+   <Button layoutX="155.0" layoutY="99.0" mnemonicParsing="false" onAction="#switchToGoal" text="Goal" />
+   <Button layoutX="227.0" layoutY="99.0" mnemonicParsing="false" onAction="#switchToMatch" text="Match" />
+   <Button layoutX="301.0" layoutY="99.0" mnemonicParsing="false" onAction="#switchToMatchReferee" text="Match_referee" />
+   <Button layoutX="71.0" layoutY="151.0" mnemonicParsing="false" onAction="#switchToSponsorTeam" text="Sponsor_team" />
+   <Button layoutX="288.0" layoutY="282.0" mnemonicParsing="false" onAction="#switchToSumOfGoals" text="Sum of goals scored by each team" />
+   <Button layoutX="117.0" layoutY="282.0" mnemonicParsing="false" onAction="#switchToAmountOfFee" text="Clubs' total income" />
+   <Label alignment="CENTER" layoutX="135.0" layoutY="233.0" prefHeight="18.0" prefWidth="282.0" text="Available views:" textAlignment="CENTER" />
+   <Button layoutX="151.0" layoutY="329.0" mnemonicParsing="false" onAction="#switchToSumOfRefereedMatches" text="Number of refereed matches by each arbiter" />
+</AnchorPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_db1.Controller.sumOfRefereedMatchesController">
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="34.0" text="How many matches each arbiter refereed">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Label>
+    <Button layoutX="224.0" layoutY="318.0" mnemonicParsing="false" onAction="#switchToApp" text="Return to main page" />
+    <TableView fx:id="sumOfRefereedMatchesTable" layoutX="149.0" layoutY="81.0" prefHeight="200.0" prefWidth="314.0">
+      <columns>
+          <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First name" />
+          <TableColumn fx:id="lastNameColumn" prefWidth="114.4000244140625" text="Last name" />
+          <TableColumn fx:id="sumColumn" prefWidth="123.19998779296873" text="Number of matches" />
+      </columns>
+    </TableView>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project_db1.Controller.StadiumController">
+    <TextField fx:id="txtName" layoutX="68.0" layoutY="54.0" promptText="Name" />
+    <Button layoutX="374.0" layoutY="99.0" mnemonicParsing="false" onAction="#insertStadium" text="Upload" />
+    <Button layoutX="230.0" layoutY="353.0" mnemonicParsing="false" onAction="#switchToApp" text="Return to main page" />
+    <TextField fx:id="txtCity" layoutX="333.0" layoutY="54.0" promptText="City" />
+    <TextField fx:id="txtCapacity" layoutX="68.0" layoutY="99.0" promptText="Capacity" />
+    <TableView fx:id="stadiumTable" layoutX="39.0" layoutY="143.0" prefHeight="200.0" prefWidth="522.0">
+      <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="205.5999755859375" text="Name" />
+          <TableColumn fx:id="cityColumn" prefWidth="176.7999267578125" text="City" />
+          <TableColumn fx:id="capacityColumn" prefWidth="144.0" text="Capacity" />
+      </columns>
+    </TableView>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="263.0" layoutY="14.0" text="Stadiums">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>
