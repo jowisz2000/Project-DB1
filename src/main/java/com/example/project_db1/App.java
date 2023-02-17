@@ -13,7 +13,7 @@ public class App extends javafx.application.Application {
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("Controller/main.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
-        stage.setTitle("Rozgrywki sportowe");
+        stage.setTitle("Sports tournament");
         stage.setScene(scene);
         stage.show();
     }
